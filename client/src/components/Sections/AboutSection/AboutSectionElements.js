@@ -42,6 +42,10 @@ export const ImageWrapper = styled.div`
     max-width: 450px;
     max-height: 450px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     @media screen and (max-width: 1000px) {
         max-width: 100%;
         position: unset;
@@ -222,5 +226,8 @@ export const ActionButtons = styled.div`
         @media screen and (max-width: 1000px) {
             margin-left: 0;
         }
+    }
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
     }
 `;

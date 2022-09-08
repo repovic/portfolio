@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 import {
-    SearchMenuOverlay,
+    SearchIcon,
+    SearchInput,
     SearchMenu,
     SearchMenuContainer,
-    SearchInput,
-    SearchIcon,
+    SearchMenuOverlay,
 } from "./SearchMenuElements";
 
 const SearchMenuComponent = ({
@@ -68,7 +68,7 @@ const SearchMenuComponent = ({
                             router.push({
                                 pathname: `/blog/`,
                                 query: {
-                                    searchQuery: searchQuery,
+                                    q: searchQuery,
                                 },
                             });
                         }}
