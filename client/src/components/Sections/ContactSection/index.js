@@ -1,30 +1,29 @@
-import { useState, useEffect, useContext } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useContext, useEffect, useState } from "react";
 
 import axios from "../../../services/axios";
 
 import {
-    ContactSection,
-    ContactDetails,
-    ContactDetail,
-    Location,
-    ContactFormWrapper,
-    Heading,
-    ContactForm,
-    Row,
     Column,
-    Label,
+    ContactDetail,
+    ContactDetails,
+    ContactForm,
+    ContactFormWrapper,
+    ContactSection,
     FormGroup,
+    Heading,
     Input,
+    Label,
+    Location,
+    Row,
     TextArea,
 } from "./ContactSectionElements";
 
-import { LineBreak, Button } from "../..";
+import { Button, LineBreak } from "../..";
 
-import { IdIcon, EmailIcon } from "../../../svg/";
-import { UserContext } from "../../../context/";
-import { ConfirmBoxContext } from "../../../context/";
+import { ConfirmBoxContext, UserContext } from "../../../context/";
+import { EmailIcon, IdIcon } from "../../../svg/";
 
 const ContactSectionComponent = ({ contactDetails, ...rest }) => {
     const { user } = useContext(UserContext);

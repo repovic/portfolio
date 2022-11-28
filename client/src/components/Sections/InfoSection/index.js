@@ -1,16 +1,16 @@
 import { InfoSection } from "./InfoSectionElements";
 
 import {
-    TextWrapper,
-    TopLine,
     Heading,
-    JobTitle,
-    Subtitile,
     ImageWrapper,
     InfoSectionImage,
+    JobTitle,
+    Subtitile,
+    TextWrapper,
+    TopLine,
 } from "./InfoSectionElements";
 
-import { Button, Row, Column, LineBreak } from "../../";
+import { Button, Column, LineBreak, Row } from "../../";
 
 const InfoSectionComponent = ({ infoSectionProps, ...rest }) => {
     return (

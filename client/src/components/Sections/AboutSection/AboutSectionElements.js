@@ -44,13 +44,14 @@ export const ImageWrapper = styled.div`
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 
     @media screen and (max-width: 1000px) {
         max-width: 100%;
         position: unset;
         top: unset;
         left: unset;
+        justify-content: center;
     }
 `;
 
